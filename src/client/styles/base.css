@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 2;
+}
+
+section {
+  max-width: 800px;
+  margin: 50px auto;
+}
+#sentimentResults {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.dataCell {
+  padding: 10px;
+  margin: 2%;
+  flex: 1 1 25%;
+  font-size: 18px;
+  border: 1px solid #0d0e38;
+  border-radius: 2%;
+}
+
+.label {
+  padding: 5px;
+  flex: 1 1 25%;
+  color: #010302;
+  font-size: 18px;
+}
+
+.colorNegative {
+  background-color: rgb(223, 185, 61);
+  font-weight: bold;
+}
+
+.colorPositive {
+  background-color: rgb(50, 175, 50);
+  font-weight: bold;
+}
+
+.paratext{
+  color: #010302;
+  padding: 10%;
+  margin: 5%;
+  background-color: aquamarine;
+}
+
+#resultsText {
+  padding: 15px;
+  background-color: rgb(rgb(28, 190, 196));
+}
+
+.error {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background-color: rgb(114, 90, 90);
+  text-decoration: underline;
+  padding: 5%;
+  font-size: 16px;
+}

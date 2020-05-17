@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>FEND 4</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="headerTitle">
+                <h1>News Article with Natural Language Processing</h1>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form onsubmit="Client.handleSubmit(event)">
+                    <input id="url" type="text" name="input" value="" placeholder="type URL (starting with https)">
+                    <input type="submit" class="submitButton" value="submit" onclick="Client.handleSubmit(event)" onsubmit="Client.handleSubmit(event)">
+                </form>
+            <section>
+
+            <section>
+            <div id="results"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Auth: Bogdan N.</p>
+        </footer>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
